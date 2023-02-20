@@ -1,0 +1,40 @@
+*{
+    margin:0%;
+    padding:0%;
+    overscroll-behavior: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width:60vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+
+
+}
+#header{
+    background-color:antiquewhite ;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 10vh;
+
+}
+#game{
+    background-color: rgb(179, 17, 17);
+    height: 50vh;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 100px;
+}
+#footer{
+    background-color: blue;
+    height: 10vh;
+}
