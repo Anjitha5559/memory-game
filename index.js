@@ -2,7 +2,7 @@ const moves = document.getElementById('moves');
 const time = document.getElementById('time');
 const gameStart = document.getElementById('startGame');
 const gameStop = document.getElementById('stopGame');
-const gameBody = document.querySelector('.game');
+const gameBody = document.getElementById('game');
 let cards;
 let firstCard = false;
 let lastCard = false;
