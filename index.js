@@ -23,4 +23,21 @@ const items = [
     { name: "asustuf", image: "asus tuf 12 gen.png" },
     { name: "RAM", image: "RAM.png" },
   ];
+  generateRandom();
+
+
+//To pick random items from the items array
+function generateRandom(){
+  let tempArray = [...items];
+  console.log(tempArray);
+  let randomArray = [];
+  size = (size*size)/2;
+  for(let i=0;i<size;i++){
+    const randomIndex = Math.floor(math.random())*size;
+    randomArray.push(tempArray[randomIndex]);
+    tempArray.splice(randomIndex,1);
+  }
+
+}
+
 
