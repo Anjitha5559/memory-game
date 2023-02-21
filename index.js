@@ -38,6 +38,7 @@ function generateRandom(size = 4) {
     tempArray.splice(randomIndex,1);//splicing it from tempArray so that it is not repeated
   }
   console.log(randomArray);//This is not printing so itinr munne tanne error nd
+  matrixGenerator(randomArray);
 
 return randomArray;//returning the array
 }
