@@ -41,20 +41,21 @@ function generateRandom(size = 4) {
 
 return randomArray;//returning the array
 }
-matrixGenerator();
+matrixGenerator(randomArray);
 
 //converting the array to matrix format
 function matrixGenerator(randomArray,size=4){
   gameBody.innerHTML="";
   randomArray = [...randomArray,...randomArray];//This is done coz the randomly chosen images has to be repeated twice
   //doing shuffling
+  console.log(randomArray);
   randomArray.sort(() => Math.random() - 0.5);
   for(let i=0;i<size;i++){
     gameBody.innerHTML+=`
     <div class="slots" slotValue = "${randomArray[i].name}">
     <div class="card-before">?</div>
         <div class="card-after">
-        <img src="img/${randomArray[i].image}" class="image"/></div>
+        <img src="${randomArray[i].image}" class="image"/></div>
     </div>`
   }
 game.style.gridTemplateColumns = `repeat(${size},1fr)`;
